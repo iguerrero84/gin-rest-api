@@ -1,0 +1,24 @@
+meta {
+  name: Checkout-Book
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{localhost}}:8080/checkout?id=4
+  body: json
+  auth: none
+}
+
+params:query {
+  id: 4
+}
+
+body:json {
+    {
+      "id": "4",
+      "title": "El Principito",
+      "author": "Antoine de Saint-Exupery",
+      "quantity": 8
+    }
+}

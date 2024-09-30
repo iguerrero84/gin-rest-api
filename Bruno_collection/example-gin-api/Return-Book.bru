@@ -1,0 +1,15 @@
+meta {
+  name: Return-Book
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{localhost}}:8080/return?id=4
+  body: none
+  auth: none
+}
+
+params:query {
+  id: 4
+}

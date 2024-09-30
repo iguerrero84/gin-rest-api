@@ -1,0 +1,20 @@
+meta {
+  name: CreateBook
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{localhost}}:8080/books
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "4",
+    "title": "The Sofware Architect Elevator",
+    "author": "Gregor Hohpe",
+    "quantity": 2
+  }
+}
